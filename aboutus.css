@@ -27,7 +27,7 @@
   }
   
   #aboutUsMainPicture {
-    background: url("../assets/aboutUs-Main-s.png") center center/cover no-repeat;
+    background: url("./assets/aboutUs-Main-s.png") center center/cover no-repeat;
     height: 277px;
   }
   
@@ -185,7 +185,7 @@
     }
   
     #aboutUsMainPicture {
-      background: url("../assets/aboutUs-Main-l.png") center center/cover
+      background: url("./assets/aboutUs-Main-l.png") center center/cover
         no-repeat;
       height: 500px;
     }
