@@ -1,0 +1,19 @@
+{
+  "name": "@vic30004/paint-brush",
+  "version": "1.0.0",
+  "description": "CSS Package for VMS products",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Visit-My-Studio/paint-brush.git"
+  },
+  "author": "Visit My Studio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Visit-My-Studio/paint-brush/issues"
+  },
+  "homepage": "https://github.com/Visit-My-Studio/paint-brush#readme"
+}

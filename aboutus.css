@@ -1,0 +1,274 @@
+#aboutUsHead {
+    padding: 37px 20px;
+  }
+  
+  #aboutUsHead a {
+    color: var(--black-color);
+  }
+  
+  #aboutUsHead .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #aboutUsHead .nav ul {
+    display: flex;
+    font-size: 0.812rem;
+    align-items: center;
+  }
+  
+  #aboutUsHead .nav ul li {
+    cursor: pointer;
+  }
+  
+  #aboutUsHead .nav ul li:first-child {
+    margin-right: 13px;
+  }
+  
+  #aboutUsMainPicture {
+    background: url("../assets/aboutUs-Main-s.png") center center/cover no-repeat;
+    height: 277px;
+  }
+  
+  /* About us info section */
+  
+  #aboutUs,
+  #manifesto,
+  #team,
+  #faq {
+    padding: 0 20px;
+  }
+  
+  #aboutUs {
+    margin-top: 55px;
+  }
+  
+  #aboutUs h2,
+  #manifesto h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  #aboutUs h3,
+  #manifesto h3 {
+    color: var(--orange-color);
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  
+  /* Manifesto */
+  
+  #manifesto h2 {
+    margin-top: 80px;
+  }
+  
+  /* Mission quote */
+  
+  #mission {
+    background: var(--medium-brown);
+    color: var(--orange-color);
+    margin: 55px 0;
+    padding: 25px 20px;
+    text-align: center;
+  }
+  
+  /* Team */
+  #team h2,
+  #team > p {
+    text-align: center;
+  }
+  
+  #team h2 {
+    margin-bottom: 40px;
+  }
+  
+  #team .team-container article {
+    width: 100px;
+  }
+  
+  #team .team-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 40px auto;
+    justify-items: center;
+    grid-gap: 20px;
+  }
+  
+  /* FAQ */
+  #faq {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 80px 0;
+  }
+  
+  #faq h2 {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  #faq .faq-container .faq-text-content {
+    border-bottom: 1px solid var(--black-color);
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  #faq .faq-container .faq-text-content p:first-child {
+    margin-bottom: 10px;
+  }
+  #faq .faq-container .faq-text-content:last-child p:last-child {
+    margin-top: 10px;
+  }
+  #faq .arrow {
+    border: solid var(--black-color);
+    border-width: 0 3px 3px 0;
+  }
+  
+  #faq .arrow-up {
+    transform: rotate(224deg);
+  }
+  
+  #faq .faq-container .faq-title {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    height: 50px;
+    justify-content: space-between;
+  }
+  #faq .faq-container .faq-title {
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  #faq .faq-container .faq-title p,
+  #faq .faq-container .faq-title h4 {
+    height: 100%;
+  }
+  #faq .faq-container .faq-title p {
+    cursor: pointer;
+  }
+  #faq .faq-text-content {
+    transition: all 0.5s ease-in-out;
+  }
+  #faq span {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  #faq .hidden {
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+  }
+  
+  #faq .faq-text-content.hidden {
+    padding: 0;
+  }
+  @media (min-width: 370px) {
+    /* About us header */
+  
+    /* About us info */
+    #aboutUs p,
+    #manifesto p {
+      margin-bottom: 24px;
+      width: 336px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    /* About us header*/
+    #aboutUsHead {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  
+    #aboutUsMainPicture {
+      background: url("../assets/aboutUs-Main-l.png") center center/cover
+        no-repeat;
+      height: 500px;
+    }
+  
+    /* About us info */
+    #aboutUs,
+    #manifesto {
+      padding: 0 40px;
+    }
+  
+    #aboutUs h2,
+    #manifesto h2 {
+      text-align: left;
+    }
+    #aboutUs h2 {
+      margin-top: 100px;
+    }
+  
+    #aboutUs p,
+    #manifesto p {
+      width: 100%;
+    }
+  
+    /* Team */
+  
+    #team .team-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 25px;
+    }
+    #team .team-container article {
+      width: 150px;
+    }
+  
+    /* FAQ */
+    #faq {
+      background: var(--medium-brown);
+      padding: 40px;
+    }
+  
+    #faq .faq-container .faq-text-content p:first-child {
+      margin-bottom: 30px;
+    }
+  
+    #faq .faq-container .faq-text-content:last-child p:last-child {
+      margin-top: 30px;
+    }
+  }
+  
+  @media (min-width: 1025px) {
+    #aboutUsHead,
+    #aboutUs {
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+  
+    #mission,
+    #manifesto {
+      padding: 67px 60px;
+    }
+  
+    #mission h3 {
+      width: 90%;
+      margin: 0 auto;
+    }
+  
+    /* team */
+    #team .team-container {
+      grid-gap: 35px;
+    }
+    #team .team-container article {
+      width: 250px;
+    }
+  
+    /* faq */
+    faq {
+      padding: 60px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+  }
+  
+  @media (min-width: 1500px) {
+  }
+  

@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap");
+
+/* soft css reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+/* Global css variables */
+:root {
+  --black-color: #090909;
+  --light-brown: #efeae4;
+  --medium-brown: #dbd5c9;
+  --orange-color: #ee5908;
+  --white-color: #fdfdfd;
+  --modal-bg: #e5e5e594;
+  --primary-font: "Montserrat", sans-serif;
+  --secondary-font: "Playfair Display", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--primary-font);
+  background-color: var(--light-brown);
+}
+
+h1 {
+  font-size: 1.375rem;
+  font-family: var(--secondary-font);
+}
+
+h2 {
+  font-size: 1.25rem;
+  font-family: var(--secondary-font);
+}
+
+h3 {
+  font-size: 1.125rem;
+  font-family: var(--secondary-font);
+}
+
+li {
+  list-style-type: none;
+}
+a {
+  color: var(--white-color);
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* Common Components */
+.logo-light,
+.logo-dark {
+  height: 44px;
+  width: 73px;
+}
+
+.logo-light {
+  background: url("../assets/logo-light.png") center center/cover no-repeat;
+}
+
+.logo-dark {
+  background: url("../assets/logo-dark.png") center center/cover no-repeat;
+}
+
+.normal-text {
+  font-size: 1rem;
+}
+
+.small-text {
+  font-size: 0.812rem;
+}
+
+.tiny-text {
+  font-size: 0.6875rem;
+}
+
+.primary-button {
+  background-color: var(--orange-color);
+  color: var(--white-color);
+  border-radius: 5px;
+  width: 102px;
+  height: 33px;
+  outline: none;
+  border: none;
+  font-family: var(--primary-font);
+  font-weight: 700;
+  font-size: 0.812rem;
+  cursor: pointer;
+  font-family: var(--primary-font);
+}
+
+.button-inactive {
+  background-color: transparent;
+  color: var(--orange-color);
+  font-size: 0.812rem;
+  font-weight: 700;
+  outline: none;
+  border: 1px solid var(--orange-color);
+  border-radius: 5px;
+  width: 102px;
+  height: 33px;
+  cursor: not-allowed;
+  font-family: var(--primary-font);
+}
+
+.button-blog {
+  background-color: transparent;
+  color: var(--orange-color);
+  font-size: 0.812rem;
+  font-weight: 700;
+  outline: none;
+  border: 1px solid var(--orange-color);
+  border-radius: 5px;
+  width: 102px;
+  height: 33px;
+  cursor: pointer;
+  font-family: var(--primary-font);
+}
+
+.secondary-button-large {
+  background-color: transparent;
+  color: var(--orange-color);
+  font-size: 0.812rem;
+  font-weight: 700;
+  outline: none;
+  border: 1px solid var(--orange-color);
+  border-radius: 5px;
+  width: 160px;
+  height: 33px;
+  cursor: pointer;
+  font-family: var(--primary-font);
+}
+
+.cls-button,
+.cls-modalBtn {
+  background-color: var(--white-color);
+  color: var(--orange-color);
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.input {
+  width: 198px;
+  height: 33px;
+  border-radius: 5px;
+  padding-left: 15px;
+  outline: none;
+  border: none;
+  font-family: var(--primary-font);
+}
+
+.arrow {
+  border: solid var(--white-color);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.none {
+  display: none !important;
+}
+
+.pub-logo {
+  color: var(--orange-color);
+  font-weight: bold;
+  font-family: var(--secondary-font);
+}
+
+@media (min-width: 768px) {
+  /* Common styles */
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.78rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+  h4 {
+    font-size: 0.9rem;
+    font-family: var(--secondary-font);
+  }
+
+  .logo-light {
+    width: 130px;
+    height: 70px;
+  }
+
+  .normal-text {
+    font-size: 1.2rem;
+  }
+
+  .small-text {
+    font-size: 1rem;
+  }
+
+  .tiny-text {
+    font-size: 0.8875rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.05rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 1.15rem;
+    font-family: var(--secondary-font);
+  }
+
+  .logo-light,
+  .logo-dark {
+    width: 167px;
+    height: 100px;
+  }
+
+  .primary-button {
+    width: 144px;
+    height: 52px;
+  }
+
+  .button-inactive {
+    width: 144px;
+    height: 52px;
+    font-size: 1rem;
+  }
+
+  .secondary-button-large {
+    width: 247px;
+    height: 52px;
+    font-size: 1rem;
+  }
+
+  .input {
+    width: 246px;
+    height: 52px;
+    font-size: 1rem;
+  }
+}

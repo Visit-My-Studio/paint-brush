@@ -1,0 +1,133 @@
+/* Modal */
+
+#modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--modal-bg);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #modal .modal-container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background-color: var(--light-brown);
+    min-width: 290px;
+    width: 290px;
+    /* max-width: 335px; */
+    padding: 15px;
+    text-align: center;
+    /* height: 100%; */
+  }
+  
+  #modal .modal-container .cls-modalBtn {
+    align-self: flex-end;
+  }
+  
+  #modal .modal-container h2 {
+    margin-bottom: 40px;
+    width: 301px;
+  }
+  
+  #modal .modal-container p {
+    margin-bottom: 20px;
+    width: 269px;
+  }
+  
+  #modal .modal-container form p {
+    width: 198px;
+    margin-top: 6px;
+  }
+  
+  #modal .modal-container form p a {
+    color: var(--black-color);
+    text-decoration: underline;
+  }
+  
+  @media (min-width: 370px) {
+    /* modal */
+    #modal .modal-container {
+      width: 355px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    /* Modal */
+  
+    #modal .modal-container {
+      width: 500px;
+    }
+    #modal .modal-container h2 {
+      width: 350px;
+    }
+  
+    #modal .modal-container p {
+      margin-bottom: 20px;
+      width: 330px;
+    }
+  
+    #modal .modal-container form input {
+      width: 250px;
+    }
+    #modal .modal-container form p {
+      width: 250px;
+    }
+  }
+  
+  @media (min-width: 1025px) {
+    #modal .modal-container {
+      height: 73%;
+      width: 821px;
+      text-align: left;
+    }
+  
+    #modal .modal-container h2 {
+      width: 650px;
+    }
+  
+    #modal .modal-container p {
+      width: 650px;
+    }
+  
+    #modal .modal-container form {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      width: 650px;
+    }
+    #modal .modal-container form p {
+      order: 3;
+      width: 450px;
+    }
+    #modal .modal-container form input {
+      flex: 0 0 66%;
+    }
+    #modal .modal-container form button {
+      flex: 0 0 22%;
+      order: 2;
+    }
+  }
+  
+  @media (min-width: 1500px) {
+    #modal .modal-container {
+      height: 73%;
+      width: 45%;
+    }
+    #modal .modal-container h2 {
+      width: 500px;
+    }
+    #modal .modal-container P {
+      width: 500px;
+    }
+  
+    #modal .modal-container form {
+      width: 500px;
+    }
+  }
+  

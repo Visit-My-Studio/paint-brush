@@ -1,0 +1,17 @@
+#terms-container {
+    display: flex;
+    flex-direction: column;
+    margin: 55px 60px 180px 61px;
+}
+
+#terms-container .terms-header {
+    margin-bottom: 53px;
+}
+
+#terms-container .text-box {
+    margin-bottom: 53px;
+}
+
+#terms-container .description p {
+    margin-top: 20px;
+}

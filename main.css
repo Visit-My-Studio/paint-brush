@@ -1,0 +1,645 @@
+#homeHead {
+    display: flex;
+    flex-flow: column;
+  
+    /* background: url("../assets//image\ 2.png") center center/cover no-repeat; */
+    height: 40vh;
+    color: var(--white-color);
+    font-family: var(--primary-font);
+    position: relative;
+    z-index: 1;
+    padding: 0 20px;
+  }
+  #homeHead::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #4949498a;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  /* #homeHead nav */
+  #homeHead .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #homeHead .nav ul {
+    display: flex;
+    font-size: 0.812rem;
+    align-items: center;
+  }
+  
+  #homeHead .nav ul li {
+    cursor: pointer;
+  }
+  
+  #homeHead .nav ul li:first-child {
+    margin-right: 13px;
+  }
+  
+  /* #homeHead title */
+  #homeHead .title {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  #homeHead .title h1 {
+    letter-spacing: 1.4px;
+    margin-bottom: 28px;
+  }
+  #homeHead .title .info-text {
+    display: none;
+  }
+  
+  #homeHead .title p:first-child {
+    margin-bottom: 8.5px;
+  }
+  
+  /* Input info */
+  
+  #input-container {
+    background-color: var(--medium-brown);
+    padding: 12px 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+  }
+  
+  #input-container p {
+    min-width: 300px;
+    height: 50px;
+    text-align: left;
+  }
+  
+  #input-container p:first-child {
+    font-weight: 300;
+    line-height: 25px;
+  }
+  
+  #input-container .form-info {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    max-width: 100%;
+    align-items: center;
+  }
+  
+  #input-container .form-info .flex-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 300px;
+    margin-top: 20px;
+  }
+  
+  #input-container .form-info p {
+    margin-top: 8px;
+    height: 20px;
+    min-width: 300px;
+    max-width: 410px;
+  }
+  
+  #input-container .form-info p a {
+    color: var(--black-color);
+    text-decoration: underline;
+  }
+  
+  #input-container .form-info .cls-button,
+  #input-container .big-screen {
+    display: none;
+  }
+  
+  /* What's coming section */
+  #coming .text-container h3 {
+    color: var(--orange-color);
+  }
+  
+  #coming .img-container img {
+    margin: 40px 0 37px 0;
+    width: 247px;
+  }
+  
+  #coming {
+    margin: 67px 20px 0 20px;
+  }
+  
+  #coming-text {
+    display: none;
+  }
+  
+  #coming .description-container {
+    margin: 10px 0 30px 0;
+    width: 290px;
+  }
+  
+  /* Platform section*/
+  #platform {
+    padding: 0 20px;
+  }
+  
+  #platform h2 {
+    margin-top: 80px;
+    margin-bottom: 40px;
+  }
+  
+  #platform .text-container {
+    margin-top: 40px;
+  }
+  
+  /* #platform .img-container img {
+    width: 248px;
+  } */
+  
+  #platform .text-container h3 {
+    color: var(--orange-color);
+    margin-bottom: 11px;
+  }
+  #platform .text-container p {
+    margin-top: 4px;
+  }
+  
+  #platform .text-container article {
+    margin-bottom: 15px;
+    width: 290px;
+  }
+  #platform .text-container article p {
+    width: 100%;
+  }
+  #platform .text-container article:last-child {
+    margin-bottom: 40px;
+  }
+  
+  /* Blog*/
+  #blog {
+    padding: 0 20px;
+  }
+  
+  #blog .scale {
+    display: none;
+  }
+  
+  #blog h2 {
+    margin-top: 80px;
+    margin-bottom: 40px;
+  }
+  
+  #blog .text-container h3 {
+    color: var(--orange-color);
+    font-size: 23px;
+    font-weight: 400;
+    margin-bottom: 11px;
+  }
+  
+  #blog .text-container {
+    margin-top: 40px;
+  }
+  
+  #blog .img-container img {
+    width: 335px;
+  }
+  
+  #blog .text-container h3 {
+    color: var(--orange-color);
+    margin-bottom: 11px;
+  }
+  #blog .text-container p {
+    margin-top: 4px;
+    margin-bottom: 29px;
+    font-weight: 300;
+    height: 106px;
+  }
+  
+  #blog .text-container article {
+    margin-bottom: 15px;
+    width: 290px;
+  }
+  #blog .text-container article p {
+    width: 100%;
+  }
+  #blog .text-container article:last-child {
+    margin-bottom: 40px;
+  }
+  
+  /* Artist Review */
+  #artist-review {
+    background-color: var(--medium-brown);
+    padding: 25px 20px;
+    margin-bottom: 55px;
+  }
+  
+  /* #artist-review img {
+    width: 247px;
+  } */
+  
+  #artist-review article h3 {
+    color: var(--orange-color);
+    margin-top: 37px;
+  }
+  
+  #artist-review article p {
+    text-align: right;
+    margin-top: 18px;
+  }
+  
+  @media (min-width: 370px) {
+    #input-container .form-info .flex-row {
+      width: 342px;
+    }
+    #input-container .form-info p {
+      width: 342px;
+    }
+  
+    /* What's coming */
+    #coming .description-container {
+      width: 335px;
+    }
+  
+    /* Platform */
+    #platform .text-container article {
+      margin-bottom: 15px;
+      width: 335px;
+    }
+  
+    /* Blog */
+    #platform .text-container article {
+      margin-bottom: 15px;
+      width: 335px;
+    }
+  
+    /* About us  */
+  
+    /* About us header */
+  
+    #aboutUsMainPicture {
+      height: 277px;
+    }
+  }
+  
+  /*Media query for Ipad */
+  @media (min-width: 768px) {
+    /* Input Container */
+    #input-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+  
+    /* What's coming */
+    #coming .img-container img {
+      margin: 0px;
+      width: 270px;
+    }
+  
+    #coming {
+      margin: 100px 20px 0 20px;
+    }
+  
+    #coming-text {
+      margin-top: 10px;
+      margin-bottom: 40px;
+      display: block;
+    }
+  
+    #coming .description-container {
+      margin-top: 10px;
+      width: 360px;
+    }
+  
+    #coming .coming-container {
+      display: flex;
+      flex-flow: row;
+      justify-content: space-between;
+    }
+  
+    #coming .text-container {
+      align-self: flex-end;
+    }
+  
+    #coming .second-container {
+      margin-top: 100px;
+      flex-direction: row-reverse;
+    }
+  
+    /* Platform */
+    #platform .platform-container {
+      display: flex;
+      flex-flow: row;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    #platform .platform-container .img-container {
+      flex: 0 0 47%;
+      align-self: flex-start;
+    }
+  
+    #platform .platform-container .img-container img {
+      margin-top: 12%;
+    }
+  
+    #platform .platform-container .text-container .article-container {
+      display: flex;
+      flex-flow: row wrap;
+    }
+  
+    #platform .text-container .article-container article {
+      flex: 0 0 80%;
+      max-width: 100%;
+      margin-right: 4%;
+    }
+  
+    /* Blog*/
+    #blog .blog-container {
+      display: flex;
+      flex-flow: row;
+      align-items: center;
+      justify-content: center;
+    }
+    #blog .scale {
+      display: flex;
+    }
+    #blog .text-container h3 {
+    width: 319px;
+    }
+    
+    #blog .blog-container .img-container {
+      flex: 0 0 47%;
+      align-self: flex-start;
+    }
+  
+    #blog .blog-container .img-container img {
+      margin-top: 12%;
+    }
+  
+    #blog .blog-container .text-container .article-container {
+      display: flex;
+      flex-flow: row wrap;
+    }
+    #blog .text-container p {
+      margin-top: 4px;
+      margin-bottom: 29px;
+      font-weight: 300;
+      height: 106px;
+      width: 319px;
+    }
+    
+    #blog .text-container .article-container article {
+      flex: 0 0 80%;
+      max-width: 100%;
+      margin-right: 4%;
+    }
+  
+    /* Artist Review */
+  
+    #artist-review {
+      display: flex;
+      flex-flow: row-reverse;
+    }
+    #artist-review article {
+      margin-right: 51px;
+    }
+    #artist-review article h3 {
+      padding-left: 20px;
+    }
+  
+    /* About us  */
+  }
+  
+  @media (min-width: 1025px) {
+    /* What's coming */
+    #coming .img-container img {
+      width: 480px;
+    }
+  
+    #coming .description-container {
+      margin: 20px 0 121px 0px;
+      width: 480px;
+    }
+  
+    #coming .right {
+      margin-left: 80px;
+    }
+  
+    #coming .left {
+      margin-right: 80px;
+    }
+  
+    /* Platform */
+    #platform .platform-container {
+      justify-content: flex-start;
+    }
+  
+    #platform .platform-container .img-container {
+      margin-right: 127px;
+    }
+    /* #platform .img-container img {
+      width: 541px;
+    } */
+  
+    /* Blog */
+    #blog .blog-container {
+      justify-content: flex-start;
+    }
+  
+    #blog .blog-container .img-container {
+      margin-right: 127px;
+    }
+    #blog .img-container img {
+      width: 541px;
+    }
+  
+    /* Aritst review */
+    #artist-review {
+      justify-content: space-around;
+      padding-top: 70px;
+      padding-bottom: 70px;
+      margin-top: 180px;
+    }
+    /* #artist-review img {
+      width: 541px;
+    } */
+    #artist-review article {
+      align-self: center;
+    }
+    #artist-review article h3 {
+      width: 535px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    /* #homeHead */
+  
+    #homeHead {
+      height: 100vh;
+      /* background: url("../assets/background-homepage-large.jpg") center
+        center/cover no-repeat; */
+    }
+  
+    #homeHead .title .info-text {
+      display: block;
+      width: 819px;
+      font-size: 26px;
+      margin: 0 auto;
+      margin-bottom: 180px;
+    }
+  
+    #homeHead .nav ul,
+    #aboutUsHead .nav ul {
+      width: 25%;
+      justify-content: space-around;
+    }
+  
+    #homeHead .nav ul li:first-child,
+    #aboutUsHead .nav ul li:first-child {
+      margin-right: 54px;
+    }
+  
+    /* Input container */
+  
+    #input-container .form-info {
+      width: 40%;
+      flex-flow: row wrap;
+    }
+  
+    #input-container .form-info .flex-row {
+      width: 490px;
+    }
+    #input-container .form-info .cls-button,
+    #input-container .big-screen {
+      display: block;
+    }
+  
+    #input-container .big-screen {
+      text-align: left;
+      margin: 0 auto;
+      font-size: 1.1rem;
+      height: 68px;
+      line-height: 30px;
+    }
+  
+    #input-container .small-screen {
+      display: none;
+    }
+    #input-container p {
+      width: 696px;
+    }
+  
+    #input-container .form-info p {
+      width: 100%;
+      max-width: 500px;
+    }
+    /* What's coming */
+    #coming {
+      margin: 158px 60px 0 60px;
+    }
+  
+    #coming .img-container img {
+      width: 541px;
+    }
+  
+    #coming-text {
+      margin-top: 20px;
+      margin-bottom: 50px;
+    }
+  
+    #coming .right {
+      margin-left: 100px;
+    }
+  
+    #coming .left {
+      margin-right: 100px;
+    }
+  
+    #coming .second-container {
+      margin-top: 150px;
+    }
+  
+    #coming .description-container {
+      width: 685px;
+    }
+  
+    /* platform */
+  
+    #platform .text-container .article-container article {
+      flex: 0 0 46%;
+      max-width: 100%;
+      margin-right: 4%;
+    }
+  
+    #platform .platform-container .img-container {
+      flex: 0 0 30%;
+    }
+    #platform .text-container .article-container {
+      display: flex;
+    }
+  
+    /* blog */
+  
+    #blog .text-container .article-container article {
+      flex: 0 0 46%;
+      max-width: 100%;
+      margin-right: 4%;
+    }
+  
+    #blog .text-container h3 {
+      height: 78px;
+    }
+  
+    #blog .text-container p {
+      height: 106px;
+    }
+  
+    #blog .blog-container .img-container {
+      flex: 0 0 30%;
+    }
+    #blog .text-container .article-container {
+      display: flex;
+    }
+  }
+  
+  @media (min-width: 1500px) {
+    /* platform */
+  
+    #platform .platform-container .img-container {
+      flex: 0 0 40%;
+    }
+    #platform .platform-container .img-container {
+      flex: 0 0 30%;
+    }
+  
+    #platform .platform-container .text-container .article-container {
+      flex-flow: row nowrap;
+    }
+  
+    #platform .text-container .article-container article {
+      flex: 0 0 60%;
+    }
+  
+    /* blog */
+  
+    #blog .blog-container .img-container {
+      flex: 0 0 40%;
+    }
+    #blog .blog-container .img-container {
+      flex: 0 0 30%;
+    }
+  
+    #blog .blog-container .text-container .article-container {
+      flex-flow: row nowrap;
+    }
+  
+    #blog .text-container .article-container article {
+      flex: 0 0 60%;
+    }
+  }
+  
