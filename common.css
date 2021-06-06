@@ -70,11 +70,11 @@ img {
 }
 
 .logo-light {
-  background: url("../assets/logo-light.png") center center/cover no-repeat;
+  background: url("./assets/logo-light.png") center center/cover no-repeat;
 }
 
 .logo-dark {
-  background: url("../assets/logo-dark.png") center center/cover no-repeat;
+  background: url("./assets/logo-dark.png") center center/cover no-repeat;
 }
 
 .normal-text {
