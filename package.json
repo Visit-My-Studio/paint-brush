@@ -1,6 +1,6 @@
 {
   "name": "@vic30004/paint-brush",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CSS Package for VMS products",
   "main": "index.js",
   "scripts": {
