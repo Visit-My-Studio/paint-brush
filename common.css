@@ -77,6 +77,10 @@ img {
   background: url("./assets/logo-dark.png") center center/cover no-repeat;
 }
 
+.artbuzz-logo {
+  background: url("./assets/artbuzz-logo.png") center center/cover no-repeat;
+}
+
 .normal-text {
   font-size: 1rem;
 }
@@ -210,7 +214,8 @@ img {
     font-family: var(--secondary-font);
   }
 
-  .logo-light {
+  .logo-light,
+  .artbuzz-logo {
     width: 130px;
     height: 70px;
   }
@@ -246,7 +251,8 @@ img {
   }
 
   .logo-light,
-  .logo-dark {
+  .logo-dark,
+  .artbuzz-logo {
     width: 167px;
     height: 100px;
   }
